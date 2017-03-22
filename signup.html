@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>LETSFUND : Login</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+        </noscript>
+    </head>
+    <body class="index loading">
+    
+        <!-- Header -->
+            <header id="header" class="alt">
+                <h1 id="logo"><a href="index.html">LETSFUND <span>Launcher</span></a></h1>
+        <!-- Header -->
+                <nav id="nav">
+                    <ul>
+                        <li class="alt">
+                                <span class="alt">
+                                    <input type="text" class="form-control" placeholder= "    Search a campaign" id="enter" 
+                                    onkeypress="enter(this, event);">
+                                        <script type="text/javascript">
+                                        function enter(inputElement, event)
+                                            {   if (event.keyCode == 13) {
+                                                inputElement.form.submit();}    }
+                                        </script>
+                                </span><!-- /input-group -->
+                        </li><!-- /.col-lg-6 -->
+                        <li class="alt"><a href="index.html">Launch</a></li>
+                        <li class="alt"><a href="index.html">Explore</a></li>
+                        <li class="alt"><a href="index.html">How It Works</a></li>
+                        <li><a href="login.html" class="button special">Log In</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- Banner -->     
+            <section id="banner">
+                           
+                <div class="inner">
+                    
+                    <header>
+                        <h2>LETSFUND</h2>
+                    </header>
+                    
+                    
+                    <!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+        <li class="active">Account Setup</li>
+        <li>Social Profiles</li>
+        <li>Personal Details</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+        <h2 class="fs-title">Create your account</h2>
+        <h3 class="fs-subtitle">This is step 1</h3>
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="pass" placeholder="Password" />
+        <input type="password" name="cpass" placeholder="Confirm Password" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+        <h2 class="fs-title">Social Profiles</h2>
+        <h3 class="fs-subtitle">Your presence on the social network</h3>
+        <input type="text" name="twitter" placeholder="Twitter" />
+        <input type="text" name="facebook" placeholder="Facebook" />
+        <input type="text" name="gplus" placeholder="Google Plus" />
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+        <h2 class="fs-title">Personal Details</h2>
+        <h3 class="fs-subtitle">We will never sell it</h3>
+        <input type="text" name="fname" placeholder="First Name" />
+        <input type="text" name="lname" placeholder="Last Name" />
+        <input type="text" name="phone" placeholder="Phone" />
+        <textarea name="address" placeholder="Address"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+    </fieldset>
+</form>
+
+<!-- jQuery -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+                    
+                    
+                    
+                </div>
+                
+            </section>
+        
+       
+           
+        
+    </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>LETSFUND : Login</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+        </noscript>
+    <style>
+            
+
+    .login-blockx {
+        width: 320px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        border-top: 5px solid #FFFFFF;
+        margin: 0 auto;
+    }
+
+    .login-blockx h1 {
+        text-align: center;
+        color: #488EA2;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .login-blockx input {
+        width: 100%;
+        height: 42px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: Montserrat;
+        padding: 0 20px 0 50px;
+        outline: none;
+    }
+
+    .login-blockx input#username {
+        background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+
+    .login-blockx input#username:focus {
+        background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+
+    .login-blockx input#password {
+        background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+
+    .login-blockx input#password:focus {
+        background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+
+    .login-blockx input:active, .login-blockx input:focus {
+        border: 1px solid #488EA2;
+    }
+
+    .login-blockx button {
+        width: 30%;
+        height: 40px;
+        background: #488EA2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #488EA2;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: Montserrat;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .login-blockx button:hover {
+        background: rgb(90, 97, 99);
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        line-height: 1em;
+        color:#488EA2;
+    }
+
+    ::-webkit-input-placeholder {
+        color: inherit;
+        opacity: 0.5;
+        position: relative;
+        top: 3px;
+    }
+
+    :-moz-placeholder {
+        color: inherit;
+        opacity: 0.5;
+    }
+
+    ::-moz-placeholder {
+        color: inherit;
+        opacity: 0.5;
+    }
+
+    :-ms-input-placeholder {
+        color: inherit;
+        opacity: 0.5;
+    }
+
+    .formerize-placeholder {
+        color: rgba(124, 128, 129, 0.5) !important;
+    }
+    .wid {
+
+        margin-left: 45px;
+    }
+
+
+    </style>
+    </head>
+    <body class="index loading">
+    
+        <!-- Header -->
+            <header id="header" class="alt">
+                <h1 id="logo"><a href="index.html">LETSFUND <span>Launcher</span></a></h1>
+        <!-- Header -->
+                <nav id="nav">
+                    <ul>
+                        <li class="alt">
+                                <span class="alt">
+                                    <input type="text" class="form-control" placeholder= "    Search a campaign" id="enter" 
+                                    onkeypress="enter(this, event);">
+                                        <script type="text/javascript">
+                                        function enter(inputElement, event)
+                                            {   if (event.keyCode == 13) {
+                                                inputElement.form.submit();}    }
+                                        </script>
+                                </span><!-- /input-group -->
+                        </li><!-- /.col-lg-6 -->
+                        <li class="alt"><a href="index.html">Launch</a></li>
+                        <li class="alt"><a href="index.html">Explore</a></li>
+                        <li class="alt"><a href="index.html">How It Works</a></li>
+                        <li><a href="login.html" class="button special">Log In</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <!-- Banner -->     
+            <section id="banner">
+                           
+                <div class="inner">
+                    
+                    <header>
+                        <h2>LETSFUND</h2>
+                    </header>
+                    
+                    <div class="login-blockx">
+                    <h1>User Login</h1>
+                    <input class="black" type="text" value="" placeholder="Username" id="username" />
+                    <input class="black" type="password" value="" placeholder="Password" id="password" />
+                    <button>LOGIN</button>
+                    <button class="wid">SIGNUP</button>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </section>
+        
+       
+           
+        
+    </body>
+</html>
